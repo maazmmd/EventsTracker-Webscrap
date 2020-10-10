@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Expense } from 'src/app/models/expense';
+import { Event } from 'src/app/models/event';
 import { ExpenseService } from 'src/app/services/expense.service';
 
 
@@ -10,7 +10,7 @@ import { ExpenseService } from 'src/app/services/expense.service';
 })
 export class ListExpensesComponent implements OnInit {
 
-  expenses: Expense[] = [];
+  events: Event[] = [];
 
   filters = {
     keyword: '',
@@ -34,19 +34,25 @@ export class ListExpensesComponent implements OnInit {
 
   listExpenses() {
     this._expenseService.getExpenses().subscribe(
-      data => this.expenses = this.filterExpenses(data)
+      data => this.events = this.filterExpenses(data)
     )
   }
 
-  filterExpenses(expenses: Expense[]) {
+  filterExpenses(expenses: Event[]) {
     return expenses.filter((e) => {
-      return e.expense.toLowerCase().includes(this.filters.keyword.toLowerCase());
+      return e.event.toLowerCase().includes(this.filters.keyword.toLowerCase());
     }).sort((a, b) => {
       if (this.filters.sortBy === 'Name') {
-        return a.expense.toLowerCase() < b.expense.toLowerCase() ? -1: 1;
-      }else if(this.filters.sortBy === 'Amount') {
-        return a.amount > b.amount ? -1: 1;
+        return a.event.toLowerCase() < b.event.toLowerCase() ? -1: 1;
+      }else if(this.filters.sortBy === 'Date') {
+        return new Date(a.startDate) < new Date(b.endDate) ? -1: 1;
+      }else if(this.filters.sortBy === 'Source') {
+        return a.origin.toLowerCase() > b.origin.toLowerCase() ? -1: 1;
       }
     })
   }
+
+    goToLink(website: string) {
+      window.open(website, "_blank");
+    }
 }

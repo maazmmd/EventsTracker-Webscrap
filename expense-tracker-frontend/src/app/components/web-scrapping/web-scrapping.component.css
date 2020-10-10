@@ -1,0 +1,32 @@
+.ubuntu-text{
+    color:#ffc107;
+}
+
+.main-page-logo{
+    margin-top: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.main-page-logo__text{
+    font-size: 10px;
+}
+
+.controls{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tagline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkository-tagline{
+    font-family:Comic Sans MS, cursive, sans-serif;
+}

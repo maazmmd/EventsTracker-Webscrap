@@ -5,19 +5,22 @@ import { RouterModule, Routes } from "@angular/router";
 import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from './app.component';
+import { WebScrappingComponent } from './components/web-scrapping/web-scrapping.component';
 import { ListExpensesComponent } from './components/list-expenses/list-expenses.component';
 import { AddExpenseComponent } from './components/add-expense/add-expense.component';
 
 const routers: Routes = [
-  {path: 'expenses', component: ListExpensesComponent},
-  {path: 'addexpense', component: AddExpenseComponent},
-  {path: 'editexpense/:id', component: AddExpenseComponent},
-  {path: '', redirectTo: '/expenses', pathMatch: 'full'}
+  {path: 'webscrap', component: WebScrappingComponent},
+  {path: 'events', component: ListExpensesComponent}, //expenses
+  {path: 'addevent', component: AddExpenseComponent}, //addexpense
+  {path: 'editevent/:id', component: AddExpenseComponent}, //editexpense
+  {path: '', redirectTo: '/webscrap', pathMatch: 'full'}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
+    WebScrappingComponent,
     ListExpensesComponent,
     AddExpenseComponent
   ],
