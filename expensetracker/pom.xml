@@ -11,7 +11,7 @@
 	<groupId>in.bushansirgur</groupId>
 	<artifactId>expensetracker</artifactId>
 	<version>v1</version>
-	<!-- <packaging>war</packaging> -->
+	<packaging>war</packaging>
 	<name>expensetracker</name>
 	<description>Event tracking application</description>
 
