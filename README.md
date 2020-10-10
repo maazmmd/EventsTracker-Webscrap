@@ -73,7 +73,7 @@ The app defines following CRUD APIs.
     
     GET /api/v1/events/{eventId}
     
-    DELETE /api/v1/expenses/{eventId}
+    DELETE /api/v1/events/{eventId}
     
     WEBSCRAP /api/vi/webscrap
 
