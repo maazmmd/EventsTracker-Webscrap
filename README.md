@@ -27,9 +27,10 @@ Wepages can be entered in config.xml persent in classpath of spring
 ```bash
 git clone https://github.com/maazmmd/EventsTracker-Webscrap.git
 ```
-The Repo is packaed into front-end and back-end  
+The Repo is packaged into front-end and back-end  
 Front-end: event-tracker-front-end  
 Back-end: eventtracker  
+
 **2. Create Mysql database**
 ```bash
 create database eventstracker
@@ -47,9 +48,8 @@ create table tbl_events (id bigint not null auto_increment, end_date varchar(255
 
 + change `spring.datasource.username` and `spring.datasource.password` as per your mysql installation
 
-**4. 
 
-**5. Build and run the app using maven (eventsetracker)**
+**4. Build and run the app using maven (eventsetracker)**
 ```bash
 mvn package
 ```
