@@ -54,7 +54,8 @@ create table tbl_events (id bigint not null auto_increment, end_date varchar(255
 ```bash
 mvn package
 ```
-You can run the app without packaging it using - (Note below command is to run using command line)
+You can run the app on Tomcat by copting war present in target folder into $CATAliNE_HOME/webapps or  
+Alternatively, you can start using spring-boot
 
 ```bash
 mvn spring-boot:run
