@@ -1,4 +1,5 @@
-# Angular 9, Spring boot, JSoup and MySQL Web Applicaton - Events Tracker using webscrap
+# Angular 9, Spring boot, JSoup and MySQL Web Applicaton
+##  Events Tracker using webscrap
 A simple events tracking application built with Angular 9 and Spring boot that connects to the MySQL database.  
 Application built using spring data JPA to perform database operations. Users can add, list, update, delete, sort, and filter the expenses.  
 
