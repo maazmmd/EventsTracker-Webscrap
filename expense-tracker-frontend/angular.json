@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1,
+  "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
     "expense-tracker-frontend": {
@@ -119,10 +119,6 @@
           }
         }
       }
-    }
-  },
-  "defaultProject": "expense-tracker-frontend",
-  "cli": {
-    "analytics": "c4e1748e-b239-404b-abf9-3c8241757439"
-  }
+    }},
+  "defaultProject": "expense-tracker-frontend"
 }
