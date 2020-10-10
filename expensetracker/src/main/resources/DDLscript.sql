@@ -1,0 +1,1 @@
+create table tbl_events (id bigint not null auto_increment, end_date varchar(255), event varchar(255), location varchar(255), origin varchar(255), start_date varchar(255), website varchar(255), primary key (id)) ;
